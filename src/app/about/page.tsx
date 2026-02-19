@@ -114,48 +114,50 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-            <section className="py-24 bg-white px-6">
-          <div className="max-w-6xl mx-auto">
-            <Reveal>
-              <h2 className="font-montserrat text-4xl font-bold text-center mb-16">
-                Why Parents Choose <span className="text-nature-green">Our Center</span>
-              </h2>
-              <div className="overflow-x-auto">
-                <table className="w-full text-left border-collapse rounded-xl overflow-hidden shadow-sm">
-                  <thead>
-                    <tr className="bg-slate-gray text-white font-montserrat uppercase text-sm">
-                      <th className="p-6">Feature</th>
-                      <th className="p-6">SIP Abacus Kasavanahalli</th>
-                      <th className="p-6">Other Local Institutes</th>
-                    </tr>
-                  </thead>
-                  <tbody className="font-inter">
-                    <tr className="border-b border-slate-100 bg-nature-green/5">
-                      <td className="p-6 font-bold">Batch Size</td>
-                      <td className="p-6 text-nature-green font-bold">Small (8-10 students) [cite: 255, 261]</td>
-                      <td className="p-6 text-slate-400">Often 15-20+ students</td>
-                    </tr>
-                    <tr className="border-b border-slate-100">
-                      <td className="p-6 font-bold">Monitoring</td>
-                      <td className="p-6 font-bold">In-house sipkvh.app Software [cite: 311, 312]</td>
-                      <td className="p-6 text-slate-400">Manual / None</td>
-                    </tr>
-                    <tr className="border-b border-slate-100 bg-nature-green/5">
-                      <td className="p-6 font-bold">Practice Support</td>
-                      <td className="p-6 font-bold">Free Extra Practice Classes [cite: 269, 292]</td>
-                      <td className="p-6 text-slate-400">Rarely Available</td>
-                    </tr>
-                    <tr className="border-b border-slate-100">
-                      <td className="p-6 font-bold">Performance Reports</td>
-                      <td className="p-6 font-bold">Monthly Analytical Reports [cite: 294, 315]</td>
-                      <td className="p-6 text-slate-400">Quarterly / General only</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </Reveal>
-          </div>
-        </section>
+  {/* Inside src/app/about/page.tsx (Comparison Table Section) */}
+<section className="py-24 px-6 bg-gradient-to-t from-nature-green/20 via-off-white to-off-white dark:from-nature-green/10 dark:via-slate-900 dark:to-slate-900 transition-colors duration-300">
+  <div className="max-w-6xl mx-auto">
+    <Reveal>
+      <h2 className="font-montserrat text-4xl font-bold text-center mb-16 dark:text-white">
+        Why Parents Choose <span className="text-nature-green italic underline underline-offset-8">Our Center</span>
+      </h2>
+      <div className="overflow-x-auto">
+        <table className="w-full text-left border-collapse rounded-2xl overflow-hidden shadow-2xl bg-white/80 dark:bg-slate-800/80 backdrop-blur-md">
+          <thead>
+            <tr className="bg-slate-gray dark:bg-slate-700 text-white font-montserrat uppercase text-sm tracking-widest">
+              <th className="p-8">Feature</th>
+              <th className="p-8">SIP Abacus Kasavanahalli</th>
+              <th className="p-8">Other Local Institutes</th>
+            </tr>
+          </thead>
+          <tbody className="font-inter text-slate-gray dark:text-slate-200">
+            <tr className="border-b border-slate-100 dark:border-slate-700 bg-nature-green/5 dark:bg-nature-green/10">
+              <td className="p-8 font-bold">Batch Size</td>
+              <td className="p-8 text-nature-green font-bold">Small (8-10 students) </td>
+              <td className="p-8 text-slate-400 dark:text-slate-500">Often 15-20+ students</td>
+            </tr>
+            <tr className="border-b border-slate-100 dark:border-slate-700 bg-nature-green/5 dark:bg-nature-green/10">
+              <td className="p-8 font-bold">Monitoring</td>
+              <td className="p-8 font-bold">In-house sipkvh.app Software</td>
+              <td className="p-8 text-slate-400 dark:text-slate-500">Manual / None</td>
+            </tr>
+            <tr className="border-b border-slate-100 dark:border-slate-700 bg-nature-green/5 dark:bg-nature-green/10">
+              <td className="p-8 font-bold">Practice Support</td>
+              <td className="p-8 font-bold">Free Extra Practice Classes</td>
+              <td className="p-8 text-slate-400 dark:text-slate-500">Rarely Available</td>
+            </tr>
+            <tr className="border-b border-slate-100 dark:border-slate-700 bg-nature-green/5 dark:bg-nature-green/10">
+              <td className="p-8 font-bold">Performance Reports</td>
+              <td className="p-8 font-bold">Monthly Analytical Reports</td>
+              <td className="p-8 text-slate-400 dark:text-slate-500">Quarterly / General only</td>
+            </tr>
+            {/* ... other rows following the same pattern ... */}
+          </tbody>
+        </table>
+      </div>
+    </Reveal>
+  </div>
+</section>
     </div>
   );
 }
