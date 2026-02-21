@@ -5,14 +5,14 @@ export default function AboutPage() {
   return (
     <div className="bg-off-white text-slate-gray font-inter">
       {/* Brand Promise Hero */}
-      <section className="py-20 px-6 bg-white border-b border-slate-100">
+      <section className="py-20 px-6 border-b border-slate-100 bg-gradient-to-r from-yellow-200 via-lime-400 to-green-600">
         <div className="max-w-4xl mx-auto text-center">
           <Reveal>
-            <span className="text-nature-green font-montserrat font-bold tracking-widest uppercase text-sm">Our Promise</span>
-            <h1 className="font-montserrat text-5xl font-bold mt-4 mb-6">
+            <span className="text-emerald-950 font-montserrat font-bold tracking-widest uppercase text-sm">Our Promise</span>
+            <h1 className="font-montserrat text-lime-950 text-5xl font-bold mt-4 mb-6">
               Making Your Child <span className="text-nature-green italic">5 Times Better</span>
             </h1>
-            <p className="text-lg leading-relaxed text-slate-500">
+            <p className="text-lg leading-relaxed text-emerald-950">
               At SIP Abacus Kasavanahalli, we believe every child is potentially smart. Through systematic 
               training and a fun learning methodology, we transform that potential into world-class performance.
             </p>
@@ -21,7 +21,7 @@ export default function AboutPage() {
       </section>
 
       {/* Leadership & Center Story */}
-      <section className="py-24 px-6">
+      <section className="py-24 px-6 bg-gradient-to-t from-nature-green/20 via-off-white to-off-white dark:from-nature-green/10 dark:via-slate-900 dark:to-slate-900 transition-colors duration-300">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <Reveal>
             <div className="space-y-6">
@@ -92,7 +92,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why We Are Different */}
-      <section className="py-24 px-6 bg-white">
+      <section className="py-24 px-6 bg-gradient-to-t from-nature-green/20 via-off-white to-off-white dark:from-nature-green/10 dark:via-slate-900 dark:to-slate-900 transition-colors duration-300">
         <div className="max-w-6xl mx-auto">
           <Reveal>
             <h2 className="font-montserrat text-4xl font-bold text-center mb-16">Key Differentiators</h2>

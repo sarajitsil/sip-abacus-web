@@ -39,25 +39,25 @@ export default function LeadForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 bg-white p-8 rounded-xl shadow-lg border border-slate-100">
-      <h3 className="font-montserrat text-2xl font-bold text-slate-gray">Book a Free Demo</h3>
-      <p className="font-inter text-sm text-slate-400 mb-4">Start your child's journey to 5x better skills.</p>
+    <form onSubmit={handleSubmit} className="space-y-4 p-8 rounded-xl shadow-lg border border-slate-100 bg-white/70">
+      <h3 className="font-montserrat text-2xl font-bold text-cyan-900">Book a Free Demo</h3>
+      <p className="font-inter text-sm text-cyan-400 mb-4">Start your child's journey to 5x better skills.</p>
       
       <input name="parent_name" placeholder="Parent Name" required 
-        className="w-full p-3 rounded border border-slate-200 font-inter focus:ring-2 focus:ring-nature-green outline-none" />
+        className="w-full p-3 rounded border border-slate-200 text-cyan-500 font-inter focus:ring-2 focus:ring-nature-green outline-none" />
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <input name="email" type="email" placeholder="Email" required 
-          className="w-full p-3 rounded border border-slate-200 font-inter" />
+          className="w-full p-3 rounded border border-slate-200 text-cyan-500 font-inter" />
         <input name="phone" type="tel" placeholder="Phone Number" required 
-          className="w-full p-3 rounded border border-slate-200 font-inter" />
+          className="w-full p-3 rounded border border-slate-200 text-cyan-500 font-inter" />
       </div>
 
       <textarea name="child_details" placeholder="Child's Name & Age (Target: 6-12 years)" 
-        className="w-full p-3 rounded border border-slate-200 font-inter h-24" />
+        className="w-full p-3 rounded border border-slate-200 text-cyan-500 font-inter h-24" />
 
       <button disabled={loading} type="submit"
-        className="w-full bg-nature-green text-white font-montserrat font-bold py-4 rounded-lg hover:bg-opacity-90 transition-all active:scale-95">
+        className="w-full bg-nature-green text-cyan-700 font-montserrat font-bold py-4 rounded-lg hover:bg-opacity-90 transition-all active:scale-95">
         {loading ? 'Submitting...' : 'Unlock Genius Potential'}
       </button>
     </form>

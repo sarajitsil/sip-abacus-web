@@ -25,7 +25,7 @@ export default function CurriculumPage() {
   ];
 
   return (
-    <div className="pt-32 pb-24 px-6 bg-off-white">
+    <div className="pt-32 pb-24 px-6 bg-gradient-to-t from-nature-green/20 via-off-white to-off-white dark:from-nature-green/10 dark:via-slate-900 dark:to-slate-900 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <Reveal>
           <h1 className="font-montserrat text-4xl font-bold mb-12 text-center text-slate-gray">
@@ -36,14 +36,14 @@ export default function CurriculumPage() {
         <div className="grid gap-8">
           {levels.map((lvl, i) => (
             <Reveal key={i}>
-              <div className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col md:flex-row justify-between items-center">
+              <div className="bg-sky-900 p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col md:flex-row justify-between items-center">
                 <div className="text-left">
-                  <h2 className="font-montserrat text-2xl font-bold text-nature-green mb-2">{lvl.name}</h2>
-                  <p className="text-slate-400 text-sm mb-4 uppercase tracking-widest">{lvl.age}</p>
-                  <p className="text-slate-600 max-w-md italic">{lvl.focus}</p>
+                  <h2 className="text-cyan-500 font-montserrat text-2xl font-bold mb-2">{lvl.name}</h2>
+                  <p className="text-cyan-200 text-sm mb-4 uppercase tracking-widest">{lvl.age}</p>
+                  <p className="text-cyan-100 max-w-md italic">{lvl.focus}</p>
                 </div>
                 <div className="mt-6 md:mt-0 text-right">
-                  <span className="bg-slate-100 text-slate-gray px-4 py-2 rounded-lg font-bold text-sm">
+                  <span className="bg-sky-950 text-cyan-100 px-4 py-2 rounded-lg font-bold text-sm">
                     {lvl.duration}
                   </span>
                 </div>

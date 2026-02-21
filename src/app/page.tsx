@@ -2,17 +2,17 @@
 
 import Reveal from '@/components/Reveal';
 import LeadForm from '@/components/LeadForm';
-import { Trophy, Star, ShieldCheck } from 'lucide-react';
+import { Trophy, Star, ShieldCheck, Dumbbell, Signature, Calculator } from 'lucide-react';
 
 export default function HomePage() {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="min-h-[90vh] flex items-center bg-white px-6">
+      <section className="min-h-[90vh] flex items-center bg-gradient-to-t from-nature-green/20 via-off-white to-off-white dark:from-nature-green/10 dark:via-slate-900 dark:to-slate-900 transition-colors duration-300">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <Reveal>
             <div className="inline-flex items-center gap-2 bg-nature-green/10 text-nature-green px-4 py-2 rounded-full mb-6">
-              <Trophy size={18} />
+              <Trophy size={20} />
               <span className="text-xs font-bold uppercase tracking-wider">Internationally Ranked 3rd (2025)</span>
             </div>
             <h1 className="font-montserrat text-5xl md:text-7xl font-bold leading-tight text-slate-gray mb-6">
@@ -36,7 +36,7 @@ export default function HomePage() {
 
         
           <Reveal>
-            <div id="demo">
+            <div id="demo" className="bg-lime-100 p-8 rounded-2xl shadow-lg border border-slate-100">
               <LeadForm />
             </div>
           </Reveal>
@@ -65,20 +65,24 @@ export default function HomePage() {
       </section>
 
       {/* Program Quick Info */}
-      <section className="py-20 bg-off-white">
+      <section className="py-20 px-6 bg-gradient-to-t from-nature-green/20 via-off-white to-off-white dark:from-nature-green/10 dark:via-slate-900 dark:to-slate-900 transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
           {[
-            { title: "Brain Gym", text: "Exercises to balance brain hemispheres and integrate thinking." },
-            { title: "Abacus", text: "Mental math and concentration using the Japanese Soroban." },
-            { title: "Speed Writing", text: "Boost productivity and focus for exam performance." }
-          ].map((item, idx) => (
-            <Reveal key={idx}>
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 h-full">
-                <h3 className="font-montserrat font-bold text-xl mb-3 text-nature-green">{item.title}</h3>
-                <p className="text-sm text-slate-500 leading-relaxed">{item.text}</p>
-              </div>
-            </Reveal>
-          ))}
+            { title: "Brain Gym", text: "Exercises to balance brain hemispheres and integrate thinking.", icon: Dumbbell },
+            { title: "Abacus", text: "Mental math and concentration using the Japanese Soroban.", icon: Calculator },
+            { title: "Speed Writing", text: "Boost productivity and focus for exam performance.", icon: Signature }
+          ].map((item, idx) => {
+            const Icon = item.icon;
+            return (
+              <Reveal key={idx}>
+                <div className="bg-sky-50 p-8 rounded-2xl shadow-sm border border-slate-100 h-full">
+                  <Icon className="w-12 h-12 text-indigo-950 shrink-0" />
+                  <h3 className="font-montserrat font-bold text-xl mb-3 text-indigo-800">{item.title}</h3>
+                  <p className="text-sm text-sky-950 leading-relaxed">{item.text}</p>
+                </div>
+              </Reveal>
+            );
+          })}
         </div>
       </section>
     </div>
